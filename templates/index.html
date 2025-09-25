@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body%}
+
+<div class="content container">
+   <div class = 'form'>
+    <p>تسجيل الدخول</p>
+    <p>أدخل الكود للمتابعة</p>
+    <input type="password" name="password" id = 'codeInput' required>
+    <button id = 'login' onclick="checkCode()">المتابعة</button>
+    <p>لا تملك كود؟ أخصل عليه الأن</p>
+    <a id = 'result'></a>
+   </div>
+</div>
+<script src="{{ url_for('static' , filename='main.js' )}}"></script>
+
+{% endblock %}
